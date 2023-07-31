@@ -12018,7 +12018,7 @@ nav {
 
 /*Styling logo*/
 .logo {
-  width: 20%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12231,7 +12231,7 @@ nav {
 .home-page .image-container img {
   display: block;
   width: 100%;
-  height: 800px;
+  height: 400px;
 }
 .home-page .text-overlay {
   position: absolute;
