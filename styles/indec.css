@@ -12013,7 +12013,6 @@ nav {
   display: flex;
   position: fixed;
   z-index: 10;
-  border-bottom: 4px solid #90a181;
 }
 
 /*Styling logo*/
@@ -12142,7 +12141,7 @@ nav {
 @media screen and (max-width: 800px) {
   nav {
     position: fixed;
-    z-index: 3;
+    z-index: 10;
   }
   .hamburger {
     display: block;
@@ -12155,20 +12154,33 @@ nav {
     transition: all 0.7s ease;
   }
   .nav-links {
-    position: fixed;
-    background: #ffffff;
-    height: 100vh;
-    width: 100%;
+    position: absolute;
+    background: white;
+    height: 4.5rem;
+    width: 50%;
+    z-index: -2;
     flex-direction: column;
-    clip-path: circle(50px at 90% -20%);
-    -webkit-clip-path: circle(50px at 90% -10%);
-    transition: all 1s ease-out;
+    transition: all 1s ease-in-out;
     pointer-events: none;
+    left: 0;
+    right: 0;
+    margin-left: 25%;
   }
   .nav-links.open {
-    clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
+    height: 60vh;
+    width: 50%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: -2;
+    top: 4.5rem;
+    display: flex;
+    background-color: white;
+    border-top: 1px solid #131418;
+  }
+  .close {
+    display: none;
   }
   .nav-links li {
     opacity: 0;
@@ -12268,7 +12280,6 @@ nav {
     display: flex;
     position: fixed;
     z-index: 10;
-    border-bottom: 4px solid #90a181;
   }
   .logo {
     width: 45%;
@@ -12349,7 +12360,6 @@ nav {
     display: flex;
     position: fixed;
     z-index: 10;
-    border-bottom: 4px solid #90a181;
   }
   .logo {
     width: 40%;
