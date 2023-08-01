@@ -12006,7 +12006,7 @@ header {
 }
 
 nav {
-  height: 4.5rem;
+  height: 5rem;
   width: 100%;
   background-color: #ffffff;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
@@ -12245,7 +12245,7 @@ nav {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #566989;
+  background-color: #70835f;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .home-page .about-me-container .about-image-container .second-img-container {
@@ -12259,6 +12259,16 @@ nav {
 @media (min-width: 576px) {
   .pt-sm-6 {
     padding-top: 4.5rem !important;
+  }
+  nav {
+    height: 4.5rem;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    border-bottom: 4px solid #90a181;
   }
   .logo {
     width: 40%;
@@ -12323,7 +12333,6 @@ nav {
     width: 100%;
     height: -moz-fit-content;
     height: fit-content;
-    background-color: #566989;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   }
   .home-page .about-me-container .about-image-container img {

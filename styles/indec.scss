@@ -13,13 +13,16 @@
 
 //Var 
  $primary: #90a181; 
- $secondry: #ff9f1c;
+ $secondry: #a58f66;
+ $secondry-two-color: #c7b490;
  $third-color: #ffffff; 
- $fourth-color: #90a181; 
+ $fourth-color: #70835f; 
+ $fourth-two-color: #4b5c3c;
  $fivth-color: #c995b3; 
+ $fivth-two-color: #aa648d;
  $sixth-color: #15223b;
  $seventh-color: #566989;
-
+ 
 
 
 
@@ -43,7 +46,7 @@
    
  }
  nav{
-    height: 4.5rem;
+    height: 5rem;
     width: 100%;
     background-color: $third-color;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
@@ -299,7 +302,7 @@
       width: 100%;
       height: fit-content;
        
-      background-color: $seventh-color;
+      background-color: $fourth-color;
       box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
 
@@ -340,6 +343,16 @@
 @media (min-width: 576px) {
    .pt-sm-6{
       padding-top: 4.5rem !important;
+   }
+   nav{
+      height: 4.5rem;
+      width: 100%;
+      background-color: $third-color;
+      box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+      display: flex;
+      position: fixed;
+      z-index: 10;
+      border-bottom: 4px solid $primary;
    }
    .logo{
       width: 40%;
@@ -422,7 +435,7 @@
       width: 100%;
       height: fit-content;
        
-      background-color: $seventh-color;
+      
       box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
 
