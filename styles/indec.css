@@ -12006,19 +12006,18 @@ header {
 }
 
 nav {
-  height: 4.5rem;
+  height: 5rem;
   width: 100%;
   background-color: #ffffff;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   position: fixed;
   z-index: 10;
-  border-bottom: 4px solid #90a181;
 }
 
 /*Styling logo*/
 .logo {
-  width: 20%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12029,21 +12028,21 @@ nav {
   height: auto;
   display: flex;
   justify-content: center;
-  border-bottom: 3px solid #c995b3;
 }
 .logo .top-container .top-span {
   text-align: center;
+  font-size: 18px;
+  letter-spacing: 5px;
 }
 .logo .bottom-container {
   width: 50%;
   height: auto;
-  border-top: 3px solid #c995b3;
+  border-top: 1px solid #ff73a4;
   display: flex;
   justify-content: center;
 }
 .logo .bottom-container .bottom-span {
   text-align: center;
-  font-family: "Charlotte";
   font-size: 9px;
   padding-top: 5px;
 }
@@ -12142,7 +12141,7 @@ nav {
 @media screen and (max-width: 800px) {
   nav {
     position: fixed;
-    z-index: 3;
+    z-index: 10;
   }
   .hamburger {
     display: block;
@@ -12155,45 +12154,41 @@ nav {
     transition: all 0.7s ease;
   }
   .nav-links {
-    position: fixed;
-    background: #ffffff;
-    height: 100vh;
-    width: 100%;
+    position: absolute;
+    background: white;
+    height: 4.5rem;
+    width: 50%;
+    z-index: -2;
     flex-direction: column;
-    clip-path: circle(50px at 90% -20%);
-    -webkit-clip-path: circle(50px at 90% -10%);
-    transition: all 1s ease-out;
+    transition: all 1s ease-in-out;
     pointer-events: none;
+    left: 0;
+    right: 0;
+    margin-left: 25%;
   }
   .nav-links.open {
-    clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
+    height: 60vh;
+    width: 50%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: -2;
+    top: 4.5rem;
+    display: flex;
+    background-color: white;
+    border-top: 1px solid #131418;
+  }
+  .close {
+    display: none;
   }
   .nav-links li {
     opacity: 0;
   }
-  .nav-links li:nth-child(1) {
-    transition: all 0.5s ease 0.2s;
-  }
-  .nav-links li:nth-child(2) {
-    transition: all 0.5s ease 0.4s;
-  }
-  .nav-links li:nth-child(3) {
-    transition: all 0.5s ease 0.6s;
-  }
-  .nav-links li:nth-child(4) {
-    transition: all 0.5s ease 0.7s;
-  }
-  .nav-links li:nth-child(5) {
-    transition: all 0.5s ease 0.8s;
-  }
   .nav-links li:nth-child(6) {
-    transition: all 0.5s ease 0.9s;
     margin: 0;
   }
   .nav-links li:nth-child(7) {
-    transition: all 0.5s ease 1s;
     margin: 0;
   }
   li.fate {
@@ -12231,7 +12226,7 @@ nav {
 .home-page .image-container img {
   display: block;
   width: 100%;
-  height: 800px;
+  height: 400px;
 }
 .home-page .text-overlay {
   position: absolute;
@@ -12245,7 +12240,7 @@ nav {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #566989;
+  border-bottom: 3px solid #ff73a4;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .home-page .about-me-container .about-image-container .second-img-container {
@@ -12260,8 +12255,17 @@ nav {
   .pt-sm-6 {
     padding-top: 4.5rem !important;
   }
+  nav {
+    height: 4.5rem;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+    z-index: 10;
+  }
   .logo {
-    width: 40%;
+    width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12272,7 +12276,6 @@ nav {
     height: auto;
     display: flex;
     justify-content: center;
-    border-bottom: 3px solid #c995b3;
   }
   .logo .top-container .top-span {
     text-align: center;
@@ -12280,13 +12283,12 @@ nav {
   .logo .bottom-container {
     width: 100%;
     height: auto;
-    border-top: 3px solid #c995b3;
+    border-top: 1px solid #ff73a4;
     display: flex;
     justify-content: center;
   }
   .logo .bottom-container .bottom-span {
     text-align: center;
-    font-family: "Charlotte";
     font-size: 9px;
     padding-top: 5px;
   }
@@ -12323,7 +12325,6 @@ nav {
     width: 100%;
     height: -moz-fit-content;
     height: fit-content;
-    background-color: #566989;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   }
   .home-page .about-me-container .about-image-container img {
@@ -12334,8 +12335,30 @@ nav {
   .pt-md-6 {
     padding-top: 4.5rem !important;
   }
+  nav {
+    height: 6rem;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+    z-index: 10;
+  }
+  .nav-links.open {
+    pointer-events: all;
+    height: 60vh;
+    width: 50%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: -2;
+    top: 6rem;
+    display: flex;
+    background-color: white;
+    border-top: 1px solid #131418;
+  }
   .logo {
-    width: 30%;
+    width: 47%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12346,7 +12369,6 @@ nav {
     height: auto;
     display: flex;
     justify-content: center;
-    border-bottom: 3px solid #c995b3;
   }
   .logo .top-container .top-span {
     text-align: center;
@@ -12354,13 +12376,12 @@ nav {
   .logo .bottom-container {
     width: 100%;
     height: auto;
-    border-top: 3px solid #c995b3;
+    border-top: 1px solid #ff73a4;
     display: flex;
     justify-content: center;
   }
   .logo .bottom-container .bottom-span {
     text-align: center;
-    font-family: "Charlotte";
     font-size: 9px;
     padding-top: 5px;
   }
@@ -12395,8 +12416,18 @@ nav {
     text-align: center;
     color: white;
   }
+  nav {
+    height: 6rem;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    border-bottom: 4px solid #90a181;
+  }
   .logo {
-    width: 20%;
+    width: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12407,7 +12438,6 @@ nav {
     height: auto;
     display: flex;
     justify-content: center;
-    border-bottom: 3px solid #c995b3;
   }
   .logo .top-container .top-span {
     text-align: center;
@@ -12415,13 +12445,12 @@ nav {
   .logo .bottom-container {
     width: 100%;
     height: auto;
-    border-top: 3px solid #c995b3;
+    border-top: 1px solid #ff73a4;
     display: flex;
     justify-content: center;
   }
   .logo .bottom-container .bottom-span {
     text-align: center;
-    font-family: "Charlotte";
     font-size: 9px;
     padding-top: 5px;
   }
@@ -12435,8 +12464,18 @@ nav {
   }
 }
 @media (min-width: 1200px) {
+  nav {
+    height: 6rem;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    border-bottom: 4px solid #90a181;
+  }
   .logo {
-    width: 20%;
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12447,7 +12486,6 @@ nav {
     height: auto;
     display: flex;
     justify-content: center;
-    border-bottom: 3px solid #c995b3;
   }
   .logo .top-container .top-span {
     text-align: center;
@@ -12455,13 +12493,12 @@ nav {
   .logo .bottom-container {
     width: 100%;
     height: auto;
-    border-top: 3px solid #c995b3;
+    border-top: 1px solid #ff73a4;
     display: flex;
     justify-content: center;
   }
   .logo .bottom-container .bottom-span {
     text-align: center;
-    font-family: "Charlotte";
     font-size: 9px;
     padding-top: 5px;
   }
@@ -12475,8 +12512,18 @@ nav {
   }
 }
 @media (min-width: 1400px) {
+  nav {
+    height: 6rem;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    border-bottom: 4px solid #90a181;
+  }
   .logo {
-    width: 15%;
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12487,7 +12534,6 @@ nav {
     height: auto;
     display: flex;
     justify-content: center;
-    border-bottom: 3px solid #c995b3;
   }
   .logo .top-container .top-span {
     text-align: center;
@@ -12495,14 +12541,61 @@ nav {
   .logo .bottom-container {
     width: 100%;
     height: auto;
-    border-top: 3px solid #c995b3;
+    border-top: 1px solid #ff73a4;
     display: flex;
     justify-content: center;
   }
   .logo .bottom-container .bottom-span {
     text-align: center;
-    font-family: "Charlotte";
-    font-size: 9px;
+    font-size: 12px;
+    padding-top: 5px;
+  }
+  .logo span {
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: 1700px) {
+  nav {
+    height: 6rem;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    border-bottom: 4px solid #90a181;
+  }
+  .logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .logo .top-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .logo .top-container .top-span {
+    text-align: center;
+  }
+  .logo .bottom-container {
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #ff73a4;
+    display: flex;
+    justify-content: center;
+  }
+  .logo .bottom-container .bottom-span {
+    text-align: center;
+    font-size: 12px;
     padding-top: 5px;
   }
   .logo span {
